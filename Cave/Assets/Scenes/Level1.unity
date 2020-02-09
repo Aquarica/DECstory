@@ -3325,7 +3325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 5
-  jumpForce: 250
+  jumpForce: 300
   originalXScale: 0
   playerDirection: 1
   platformsLayerMask:
