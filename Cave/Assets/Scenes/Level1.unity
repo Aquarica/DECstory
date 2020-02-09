@@ -3125,6 +3125,7 @@ GameObject:
   - component: {fileID: 1668086034}
   - component: {fileID: 1668086033}
   - component: {fileID: 1668086032}
+  - component: {fileID: 1668086035}
   m_Layer: 0
   m_Name: Player walk 2_0
   m_TagString: Untagged
@@ -3378,6 +3379,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.77805114, y: 1.5001116}
   m_EdgeRadius: 0
+--- !u!114 &1668086035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668086027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91b683e750edc7744b064912e1d32ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 4613131052917007145, guid: fc7fe38271118c94485fe58276636a35,
+    type: 3}
+  projectileDirection: 1
 --- !u!1 &1731951267
 GameObject:
   m_ObjectHideFlags: 0
