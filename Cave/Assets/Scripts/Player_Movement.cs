@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
 {
+    Animator anim;
+
     public float walkSpeed = 5f;                                                                      // Sets walkSpeed variable to 5
     public float jumpForce = 250f;                                                                    // Sets jumpForce variable to 250
     public float originalXScale;                                                                      // Sets originialXScale variable
@@ -14,11 +16,17 @@ public class Player_Movement : MonoBehaviour
 
     [SerializeField] private LayerMask platformsLayerMask = 8;                                        // References the layermask of Platforms for the grounded boolean
 
+    void Start()
+    {
+        anim.SetInteger("State", 0);
+    }
+
     void Awake()
     {
         playerBody = transform.GetComponent<Rigidbody2D>();                                           // Sets the playerBody to the Rigidbody2D
         playerCollider = transform.GetComponent<BoxCollider2D>();                                     // Sets the playerCollider to the BoxCollider2D
         originalXScale = transform.localScale.x;                                                      // Sets current Player Direction to OriginalXScale
+
     }
 
     bool IsGrounded()
@@ -37,6 +45,7 @@ public class Player_Movement : MonoBehaviour
         float playerHorizontal = Input.GetAxisRaw("Horizontal");                                    // Setts the Player Horizontal to the current Player Horizontal
         playerBody.velocity = new Vector2(playerHorizontal * walkSpeed, playerBody.velocity.y);     // Setts the Player velocity based on the walkSpeed set 
 
+
         if (playerHorizontal * playerDirection < 0f)                                                // Detects if the Player has changed direction
         {
             FlipPlayerDirection();
@@ -47,6 +56,7 @@ public class Player_Movement : MonoBehaviour
             playerBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);                   // Triggers the Player to jump based on the jumpForce
             return;
         }
+        anim.SetInteger("State", 1);
     }
 
     void FlipPlayerDirection()                                                                      // Triggers when the if statement under walk occurs
