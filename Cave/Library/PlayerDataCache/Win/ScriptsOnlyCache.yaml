@@ -1,7 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Enemy_ground
+    - Enemy_ground2
     - MainMenu
+    - Player_Movement
+    - Player_Projectile
+    - Projectile_Detection
     - QuickQuit
     TextMeshPro-2017.3-Runtime.dll:
     - TMPro.TMP_ColorGradient
@@ -11,20 +16,11 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -49,25 +45,57 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 62
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 612}
     - Class: 114
-      Script: {instanceID: 19256}
+      Script: {instanceID: 10306}
+    - Class: 114
+      Script: {instanceID: 11488}
+    - Class: 114
+      Script: {instanceID: 12264}
+    - Class: 114
+      Script: {instanceID: 12266}
+    - Class: 114
+      Script: {instanceID: 12268}
+    - Class: 114
+      Script: {instanceID: 12270}
+    - Class: 114
+      Script: {instanceID: 14562}
+    - Class: 114
+      Script: {instanceID: 14568}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 19719996
       Script: {instanceID: 0}
     - Class: 156049354
       Script: {instanceID: 0}
@@ -90,15 +118,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
       Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
@@ -971,12 +995,42 @@ ScriptsOnlyBuild:
     className: SimpleScript
   - hash:
       serializedVersion: 2
+      Hash: 4163d9e2fc87fb7ae31cf4c17d488654
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Player_Movement
+  - hash:
+      serializedVersion: 2
+      Hash: 3b2ca2dfdd801b38724152835a3ed925
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Projectile_Detection
+  - hash:
+      serializedVersion: 2
+      Hash: 4b5db2e0428e736c2bb0725a129a2f84
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Player_Projectile
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: QuickQuit
+  - hash:
+      serializedVersion: 2
+      Hash: 7593d7e6c50952c29b794774b6a35a49
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemy_ground
+  - hash:
+      serializedVersion: 2
+      Hash: 7593d7e6c50952c29b794774b6a35a49
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemy_ground2
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Level1.unity
-  playerPath: C:/Users/clesk/Documents/Spring_2020/DIG_4715C/DECstory/Cave/Build/Cave.exe
+  playerPath: C:/Users/Danie_000/Desktop/Platformer Test/CaveStoryBuilds/Cave.exe
