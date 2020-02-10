@@ -6,6 +6,7 @@ TagManager:
   tags:
   - platform
   - tombstone
+  - Exit1
   layers:
   - Default
   - TransparentFX
