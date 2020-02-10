@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_Movement : MonoBehaviour
 {
@@ -65,5 +66,13 @@ public class Player_Movement : MonoBehaviour
         Vector3 scale = transform.localScale;                                                       // Sets the scale of the Player
         scale.x = originalXScale * playerDirection;                                                 // Sets the scale based on the direction
         transform.localScale = scale;                                                               // Updates the visual change of scale to the Player
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == ("Exit1"))
+        {
+            SceneManager.LoadScene("Level2");
+        }
     }
 }
